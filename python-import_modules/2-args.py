@@ -18,5 +18,5 @@ def args_funct():
         print("{}: {}".format(i, arguments[i]))
         
 
-if (__name__ == __main__):
+if (__name__ == "__main__"):
     args_funct()
