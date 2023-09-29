@@ -1,8 +1,9 @@
 #!/usr/bin/python3
 
+from variable_load_5 import a
+
 def var_load():
-    variable_imported = __import__("variable_load_5")
-    print(variable_imported.a)
+    print(a)
 
 
 if (__name__ == "__main__"):
