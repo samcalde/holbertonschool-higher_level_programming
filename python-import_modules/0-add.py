@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-import add_0.add
+from add_0 import add
 
 def add_funct():
     a = 1
