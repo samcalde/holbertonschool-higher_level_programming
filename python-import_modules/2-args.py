@@ -16,7 +16,7 @@ def args_funct():
 
     for i in range(1, (argument_lenght)):
         print("{}: {}".format(i, arguments[i]))
-        
+
 
 if (__name__ == "__main__"):
     args_funct()
