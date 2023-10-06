@@ -2,4 +2,4 @@
 
 def common_elements(set_1, set_2):
     common_el = set_1.intersection(set_2)
-    return(common_el)
+    return (common_el)
