@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-
 """
 Creating a class that represents a square
 """
@@ -8,7 +7,7 @@ Creating a class that represents a square
 class Square:
     """
     The class that represents a square with a size, taking errors into account
-    
+
     Attributes:
         __size (int): The size of the square's sides.
 
