@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
 """
-Module description: Creates a class that represents a square with size
+Creating a class that represents a square
 """
 
 
