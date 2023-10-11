@@ -8,6 +8,12 @@ Creating a class that represents a square
 class Square:
     """
     The class that represents a square with a size, taking errors into account
+    
+    Attributes:
+        __size (int): The size of the square's sides.
+
+    Methods:
+        __init__(self, size=0): Initializes a new Square instance with the specified size.
     """
     def __init__(self, size=0):
         """
