@@ -13,7 +13,6 @@ class Square:
     def __init__(self, size=0):
         """
         Init for the square class oject
-
         Args:
             size (int): size of the square
         """
