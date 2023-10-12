@@ -81,8 +81,8 @@ class Rectangle:
         """
         if (self.__width == 0 or self.__height == 0):
             return ("")
-        rows = (f"{self.print_symbol * self.__width}\n" * (self.__height - 1))
-        final_row = f"{self.print_symbol * self.__width}"
+        rows = (f"{str(self.print_symbol) * self.__width}\n" * (self.__height - 1))
+        final_row = f"{str(self.print_symbol) * self.__width}"
         return (rows + final_row)
 
     def __repr__(self):
