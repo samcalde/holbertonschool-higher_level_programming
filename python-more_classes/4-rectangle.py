@@ -72,7 +72,7 @@ class Rectangle:
         rows = (f"{'#' * self.__width}\n" * (self.__height - 1))
         final_row = f"{'#' * self.__width}"
         return (rows + final_row)
-    
+
     def __repr__(self):
         """
         String representation of the rectangle
