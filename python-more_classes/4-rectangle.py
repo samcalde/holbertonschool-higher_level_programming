@@ -67,7 +67,11 @@ class Rectangle:
         """
         Returns string to print the rectangle with the character #
         """
-        return (f"{'#' * self.__width}\n" * self.__height)
+        if (self.__width == 0 or self.__height == 0):
+            return ("")
+        rows = (f"{'#' * self.__width}\n" * (self.__height - 1))
+        final_row = f"{'#' * self.__width}"
+        return (rows + final_row)
     
     def __repr__(self):
         """
