@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 
-"""
-Creating a class that represents a square
+"""Creating a class that represents a square
 """
 
 
