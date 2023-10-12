@@ -59,10 +59,14 @@ class Rectangle:
         """
         Returns perimeter of rectangle
         """
+        if (self.__width == 0 or self.__height == 0):
+            return 0
         return ((self.__width * 2) + (self.__height * 2))
 
     def __str__(self):
         """
         Returns string to print the rectangle with the character #
         """
-        return (f"{'#' * self.__width}\n" * self.__height)
+        if (self.__width == 0 or self.__height == 0):
+            return ("")
+        return (f"{'#' * self.__width}" * self.__height)
