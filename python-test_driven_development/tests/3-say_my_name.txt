@@ -1,0 +1,8 @@
+>>> print("My name is John Smith")
+My name is John Smith
+>>> print("My name is Walter White")
+My name is Walter White
+>>> print("My name is Bob")
+Bob 
+>>> print(My name is 12 White)
+first_name must be a string
