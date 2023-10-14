@@ -19,5 +19,5 @@ def text_indentation(text):
         if character in (".", "?", ":"):
             higher_limit = i
             print(f"{text[lower_limit:higher_limit]}\n\n")
-            lower_limit = i + 1
+            lower_limit = i
     print(f"{text[lower_limit:]}")
