@@ -20,3 +20,4 @@ def text_indentation(text):
             higher_limit = i
             print(f"{text[lower_limit:higher_limit]}\n\n")
             lower_limit = i + 1
+    print(f"{text[lower_limit:0]}")
