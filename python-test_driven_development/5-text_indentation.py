@@ -11,13 +11,15 @@ def text_indentation(text):
     """
     if type(text) is not str:
         raise TypeError("text must be a string")
-    lower_limit = 0
-    higher_limit = 0
-    i = 0
-    for character in text:
-        i += 1
-        if character in (".", "?", ":"):
-            higher_limit = i
-            print(f"{text[lower_limit:higher_limit]}\n")
-            lower_limit = i
-    print(f"{text[lower_limit:]}", end="")
+    j = 0
+    for i in range(0, len(text)):
+        if text[i] in (".", "?", ":"):
+            if (text[j] == " "):
+                while (text[j] == " "):
+                    j += 1
+            print(f"{text[j:i + 1]}\n")
+            j = i + 1
+    if (text[j] == " "):
+        while (text[j] == " "):
+            j += 1
+    print(f"{text[j:]}", end="")
