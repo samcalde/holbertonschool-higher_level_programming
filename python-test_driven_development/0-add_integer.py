@@ -3,6 +3,8 @@
 """
 Function that adds 2 ints
 """
+
+
 def add_integer(a, b=98):
     """
     Adds int a with int b
@@ -16,4 +18,3 @@ def add_integer(a, b=98):
     if not (type(b) == int):
         raise TypeError("b must be an integer")
     return a + b
-    

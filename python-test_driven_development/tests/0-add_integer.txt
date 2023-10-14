@@ -1,2 +1,12 @@
 >>> sum (1, 2)
 3
+>>> sum(100, -2)
+98
+>>> sum(2)
+100
+>>> sum(100.3, -2)
+98
+>>> sum(4, "School")
+b must be an integer
+>>> sum(None)
+a must be an integer
