@@ -31,6 +31,6 @@ def matrix_divided(matrix, div):
                 result = "{:.1f}".format(result)
             else:
                 result = "{:.2f}".format(result)
-            new_list.append(result)
+            new_list.append(float(result))
         new_matrix.append(new_list)
     return new_matrix
