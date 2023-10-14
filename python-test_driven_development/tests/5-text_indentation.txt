@@ -1,0 +1,41 @@
+>>>print("Lorem ipsum dolor sit amet, consectetur adipiscing elit.")
+Lorem ipsum dolor sit amet, consectetur adipiscing elit
+
+>>>print("Quonam modo?.")
+Quonam modo?
+
+>>>print("Utrum igitur tibi litteram videor an totas paginas commovere")
+Utrum igitur tibi litteram videor an totas paginas commovere
+
+>>>print("Non autem hoc:")
+Non autem hoc:
+
+>>>print("igitur ne illud quidem.")
+igitur ne illud quidem.
+
+>>>print("Fortasse id optimum, sed ubi illud:")
+Fortasse id optimum, sed ubi illud:
+
+>>>print("Plus semper voluptatis?")
+Plus semper voluptatis?
+
+>>>print("Teneo, inquit, finem illi videri nihil dolere")
+Teneo, inquit, finem illi videri nihil dolere
+
+>>>print("Transfer idem ad modestiam vel temperantiam, quae est moderatio cupiditatum rationi oboediens.")
+Transfer idem ad modestiam vel temperantiam, quae est moderatio cupiditatum rationi oboediens.
+
+>>>print("Si id dicis, vicimus.")
+Si id dicis, vicimus.
+
+>>>print("Inde sermone vario sex illa a Dipylo stadia confecimus.")
+Inde sermone vario sex illa a Dipylo stadia confecimus.
+
+>>>print("Sin aliud quid voles, postea.")
+Sin aliud quid voles, postea.
+
+>>>print("Quae animi affectio suum cuique tribuens atque hanc, quam dico.")
+Quae animi affectio suum cuique tribuens atque hanc, quam dico.
+
+>>>print("Utinam quidem dicerent alium alio beatiorem! Iam ruinas videres")
+Utinam quidem dicerent alium alio beatiorem! Iam ruinas videres
