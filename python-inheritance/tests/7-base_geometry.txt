@@ -12,21 +12,25 @@ This is an example text file in 7-base_geometry.py
 >>> bg = BaseGeometry()
 >>> bg.integer_validator("my_int", 12)
 
-# BaseGeometry = less than 0
+# BaseGeometry = value is 0
+>>> bg = BaseGeometry()
+>>> bg.integer_validator("age", 0)
+Traceback (most recent call last):
+ValueError: age must be greater than 0
+
+# BaseGeometry = value is less than 0
 >>> bg = BaseGeometry()
 >>> bg.integer_validator("distance", -4)
 Traceback (most recent call last):
-...
-[ValueError] distance must be greater than 0
+ValueError: distance must be greater than 0
 
 # BaseGeometry = str passed as int
 >>> bg = BaseGeometry()
 >>> bg.integer_validator("name", "John")
 Traceback (most recent call last):
-...
-[TypeError] name must be an integer
+TypeError: name must be an integer
 
 # BaseGeometry = check area
 >>> bg = BaseGeometry()
 >>> bg.area()
-[Exception] area() is not implemented
+Exception: area() is not implemented
