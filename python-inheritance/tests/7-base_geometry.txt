@@ -29,3 +29,45 @@ ValueError: distance must be greater than 0
 >>> bg.integer_validator("name", "John")
 Traceback (most recent call last):
 TypeError: name must be an integer
+
+# BaseGeometry = list passed as int
+>>> bg = BaseGeometry()
+>>> bg.integer_validator("name", [2])
+Traceback (most recent call last):
+TypeError: name must be an integer
+
+# BaseGeometry = tuple passed as int
+>>> bg = BaseGeometry()
+>>> bg.integer_validator("name", (4,))
+Traceback (most recent call last):
+TypeError: name must be an integer
+
+# BaseGeometry = bool passed as int
+>>> bg = BaseGeometry()
+>>> bg.integer_validator("name", True)
+Traceback (most recent call last):
+TypeError: name must be an integer
+
+# BaseGeometry = dictionary passed as int
+>>> bg = BaseGeometry()
+>>> bg.integer_validator("name", {3, 4})
+Traceback (most recent call last):
+TypeError: name must be an integer
+
+# BaseGeometry = no arguments passed
+>>> bg = BaseGeometry()
+>>> bg.integer_validator()
+Traceback (most recent call last):
+TypeError: integer_validator() missing 2 required positional arguments: 'name' and 'value'
+
+# BaseGeometry = no value argument passed
+>>> bg = BaseGeometry()
+>>> bg.integer_validator()
+Traceback (most recent call last):
+TypeError: integer_validator() missing 1 required positional argument: 'value'
+
+# BaseGeometry = Pass "None" as value
+>>> bg = BaseGeometry()
+>>> bg.integer_validator("name", None)
+Traceback (most recent call last):
+TypeError: name must be an integer
