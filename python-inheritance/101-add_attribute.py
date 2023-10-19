@@ -11,7 +11,7 @@ def add_attribute(obj, att_name, att_value):
     """
     if (hasattr(obj, '__slots__') and att_name not in obj.__slots__):
         raise TypeError("can't add new attribute")
-    elif (issubclass(obj.__class__, (str, int, float, tuple, bool, frozenset))):
+    elif (isinstance(obj.__class__, (str, int, float, tuple, bool, frozenset))):
         setattr(obj, att_name, att_value)
     else:
         raise TypeError("can't add new attribute")
