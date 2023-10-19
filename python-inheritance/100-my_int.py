@@ -3,6 +3,8 @@
 """
 Class that inherits from int and switches == and !=
 """
+
+
 class MyInt(int):
     """
     Class that inherits from int
