@@ -23,7 +23,7 @@ class Rectangle(__import__('7-base_geometry').BaseGeometry):
         Implementation of area
         """
         return (self.__width * self.__height)
-    
+
     def __str__(self):
         """
         Returns rectangle description
