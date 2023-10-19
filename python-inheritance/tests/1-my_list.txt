@@ -1,11 +1,3 @@
-The ``1-my_list.py`` module
-======================
-
-Using ``MyList``
--------------------
-
-This is an example text file in 1-my_list.py.  First import
-``MyList`` from the ``1-my_list.py`` module:
 >>> MyList = __import__('1-my_list').MyList
 
 # my_list = easily sorted integers

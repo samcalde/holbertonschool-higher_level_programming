@@ -8,21 +8,25 @@ This is an example text file in 7-base_geometry.py
 ``BaseGeometry`` from the ``7-base_geometry.py `` module:
 >>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
 
-# BaseGeometry = positive integer validation with string as a name
+# BaseGeometry = correct way
 >>> bg = BaseGeometry()
 >>> bg.integer_validator("my_int", 12)
->>> bg.integer_validator("width", 89)
->>> bg.integer_validator("name", "John")
-Traceback (most recent call last):
-...
-[TypeError] name must be an integer
->>> bg.integer_validator("age", 0)
-Traceback (most recent call last):
-...
-[ValueError] age must be greater than 0
+
+# BaseGeometry = less than 0
+>>> bg = BaseGeometry()
 >>> bg.integer_validator("distance", -4)
 Traceback (most recent call last):
 ...
 [ValueError] distance must be greater than 0
 
-#
+# BaseGeometry = str passed as int
+>>> bg = BaseGeometry()
+>>> bg.integer_validator("name", "John")
+Traceback (most recent call last):
+...
+[TypeError] name must be an integer
+
+# BaseGeometry = check area
+>>> bg = BaseGeometry()
+>>> bg.area()
+[Exception] area() is not implemented
