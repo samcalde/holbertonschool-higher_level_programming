@@ -19,4 +19,3 @@ except:
 for item in range(1, args_len):
     data_structure.append(sys.argv[item])
 save_to_json_file(data_structure, 'add_item.json')
-
