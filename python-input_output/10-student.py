@@ -21,12 +21,13 @@ class Student():
         """
         Retrieves a dictionary representation of a Student instance
         """
-        if isinstance(attrs, list) and all(isinstance(item, str) for item in attrs):
-            dictionary = vars(self)
-            filtered_dic = {}
-            for element in attrs:
-                if (element in dictionary):
-                    filtered_dic[element] = dictionary[element]
-            return filtered_dic
+        if isinstance(attrs, list):
+            if (all(isinstance(item, str) for item in attrs)):
+                dictionary = vars(self)
+                filtered_dic = {}
+                for element in attrs:
+                    if (element in dictionary):
+                        filtered_dic[element] = dictionary[element]
+                return filtered_dic
 
         return vars(self)
