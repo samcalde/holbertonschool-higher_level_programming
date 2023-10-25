@@ -17,7 +17,7 @@ class Base:
         else:
             Base.increment_objects()
             self.id = Base.___nb_objects
-    
+
     @classmethod
     def increment_objects(cls):
         cls.___nb_objects += 1
