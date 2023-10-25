@@ -95,12 +95,18 @@ class Rectangle(Base):
         return (self.__width * self.__height)
     
     def display(self):
+        """
+        Displays rectangle printed with #
+        """
         for height in range(self.__height):
             for width in range(self.__width):
                 print("#", end="")
             print("")
 
     def __str__(self):
+        """
+        Replaces the str method to print [Rectangle] (<id>) <x>/<y> - <width>/<height>
+        """
         line1 = f"[{self.__class__.__name__}] ({self.id}) {self.__x}/{self.__y}"
         line2 = f" - {self.__width}/{self.__height}"
         return (line1 + line2)
