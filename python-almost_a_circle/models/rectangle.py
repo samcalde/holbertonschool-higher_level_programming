@@ -50,10 +50,7 @@ class Rectangle(Base):
         """
         width setter
         """
-        if type(value) != int:
-            raise TypeError("width must be an int")
-        if value < 0:
-            raise ValueError("width must be >= 0")
+        self.integer_validator("width", value)
         self.__width = value
 
     @height.setter
@@ -61,10 +58,7 @@ class Rectangle(Base):
         """
         height setter
         """
-        if type(value) != int:
-            raise TypeError("width must be an int")
-        if value < 0:
-            raise ValueError("width must be >= 0")
+        self.integer_validator("height", value)
         self.__height = value
 
     @x.setter
@@ -72,10 +66,7 @@ class Rectangle(Base):
         """
         x setter
         """
-        if type(value) != int:
-            raise TypeError("width must be an int")
-        if value < 0:
-            raise ValueError("width must be >= 0")
+        self.integer_validator("x", value)
         self.__x = value
 
     @y.setter
@@ -83,8 +74,16 @@ class Rectangle(Base):
         """
         y setter
         """
-        if type(value) != int:
-            raise TypeError("width must be an int")
-        if value < 0:
-            raise ValueError("width must be >= 0")
+        self.integer_validator("y", value)
         self.__y = value
+
+    def integer_validator(self, name, value):
+        """
+        Integer validator
+        """
+        if type(value) != int:
+            raise TypeError(f"{name} must be an integer")
+        if (name in ("y", "x")) and value < 0:
+            raise ValueError(f"{name} must be >= 0")
+        if (name in ("width", "height")) and value <= 0:
+            raise ValueError(f"{name} must be > 0")
