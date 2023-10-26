@@ -6,6 +6,8 @@ Module defines the Rectangle class, which inherits from Base in base.py
 
 
 from models.base import Base
+
+
 class Rectangle(Base):
     """
     Definition of the Rectangle class
@@ -46,7 +48,7 @@ class Rectangle(Base):
         return self.__y
 
     @width.setter
-    def width(self,value):
+    def width(self, value):
         """
         width setter
         """
@@ -54,7 +56,7 @@ class Rectangle(Base):
         self.__width = value
 
     @height.setter
-    def height(self,value):
+    def height(self, value):
         """
         height setter
         """
@@ -62,7 +64,7 @@ class Rectangle(Base):
         self.__height = value
 
     @x.setter
-    def x(self,value):
+    def x(self, value):
         """
         x setter
         """
@@ -70,7 +72,7 @@ class Rectangle(Base):
         self.__x = value
 
     @y.setter
-    def y(self,value):
+    def y(self, value):
         """
         y setter
         """
@@ -93,7 +95,7 @@ class Rectangle(Base):
         Returns area of the Rectangle instance
         """
         return (self.__width * self.__height)
-    
+
     def display(self):
         """
         Displays rectangle printed with #
@@ -114,7 +116,7 @@ class Rectangle(Base):
         line1 = f"[{self.__class__.__name__}] ({self.id}) {self.__x}/"
         line2 = f"{self.__y} - {self.__width}/{self.__height}"
         return (line1 + line2)
-    
+
     def update(self, *args, **kwargs):
         """
         Updates values of the Rectangle

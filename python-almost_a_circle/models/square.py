@@ -6,6 +6,8 @@ Definition of a class Square, that inherits from Rectangle
 
 
 from models.rectangle import Rectangle
+
+
 class Square(Rectangle):
     """
     Definition of class and methods of Square
@@ -50,7 +52,7 @@ class Square(Rectangle):
         else:
             for key, value in kwargs.items():
                 setattr(self, key, value)
-    
+
     def to_dictionary(self):
         """
         Returns dict representation of instance
