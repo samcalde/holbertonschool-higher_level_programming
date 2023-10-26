@@ -69,7 +69,7 @@ class Base:
         if cls == Square:
             instance = cls(1)
         else:
-            instance = cls(1,1)
+            instance = cls(1, 1)
         instance.update(**dictionary)
         return instance
 
