@@ -27,9 +27,12 @@ class Base:
     @staticmethod
     def to_json_string(list_dictionaries):
         """
-        Turns a dictionary into a JSON string representation
+        Turns a dictionary into a JSON string
         """
         if list_dictionaries:
-            return json.dumps(list_dictionaries)
+            dic_list = []
+            for item in list_dictionaries:
+                dic_list.append(json.dumps(list_dictionaries))
+            return dic_list
         else:
             return []
