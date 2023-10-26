@@ -5,6 +5,8 @@ This module creates a class named Base
 """
 
 
+import json
+
 class Base:
     """
     Definition of the class
@@ -21,3 +23,13 @@ class Base:
     @classmethod
     def increment_objects(cls):
         cls.___nb_objects += 1
+    
+    @staticmethod
+    def to_json_string(list_dictionaries):
+        """
+        Turns a dictionary into a JSON string representation
+        """
+        if list_dictionaries:
+            return json.dumps(list_dictionaries)
+        else:
+            return []
