@@ -87,4 +87,4 @@ class Base:
         for dictionary in dictionaries:
             instance = cls.create(**dictionary)
             instances_list.append(instance)
-        print(instances_list)
+        return instances_list
