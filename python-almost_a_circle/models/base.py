@@ -7,6 +7,7 @@ This module creates a class named Base
 
 import json
 
+
 class Base:
     """
     Definition of the class
@@ -23,7 +24,7 @@ class Base:
     @classmethod
     def increment_objects(cls):
         cls.___nb_objects += 1
-    
+
     @classmethod
     def save_to_file(cls, list_objs):
         """
@@ -47,16 +48,16 @@ class Base:
         if list_dictionaries:
             return json.dumps(list_dictionaries)
         return []
-    
+
     @staticmethod
     def from_json_string(json_string):
         """
         Returns the list of the JSON string representation json_string
         """
-        obj_list = ""
         if json_string:
-            obj_list = json.loads(json_string) 
-        return obj_list
+            obj_list = json.loads(json_string)
+            return obj_list
+        return []
 
     @classmethod
     def create(cls, **dictionary):
@@ -65,10 +66,13 @@ class Base:
         """
         from models.rectangle import Rectangle
         from models.square import Square
-        instance = cls(1, 1)
+        if cls == Square:
+            instance = cls(1)
+        else:
+            instance = cls(1,1)
         instance.update(**dictionary)
         return instance
-    
+
     @classmethod
     def load_from_file(cls):
         """
