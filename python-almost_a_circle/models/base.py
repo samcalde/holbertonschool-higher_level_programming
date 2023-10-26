@@ -47,7 +47,7 @@ class Base:
         """
         if list_dictionaries:
             return json.dumps(list_dictionaries)
-        return []
+        return ("[]")
 
     @staticmethod
     def from_json_string(json_string):
