@@ -33,7 +33,7 @@ class Base:
         if list_objs:
             objs_list = []
             for instance in list_objs:
-                objs_list.append(cls.to_json_string(instance.to_dictionary()))
+                objs_list.append(instance.to_dictionary())
             with open(f'{cls.__name__}.json', 'w') as file:
                 json.dump(objs_list, file)
         else:
