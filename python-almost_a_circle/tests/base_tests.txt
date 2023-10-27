@@ -2,17 +2,16 @@
 
 # b = automatically assigned ID
 >>> b = Base()
+>>> print(b.id)
+1
+
+#b = automatically assigned ID + 1 of previous
+>>> b = Base()
 >>> b2 = Base()
 >>> b3 = Base()
->>> b4 = Base(50)
->>> b5 = Base()
 >>> print(b.id)
 >>> print(b2.id)
 >>> print(b3.id)
->>> print(b4.id)
->>> print(b5.id)
 1
 2
 3
-50
-4
