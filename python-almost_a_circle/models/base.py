@@ -82,7 +82,7 @@ class Base:
         from models.square import Square
         with open(f'{cls.__name__}.json', 'r') as file:
             data = file.read()
-            dictionaries = json.loads(data)
+            dictionaries = cls.from_json_string(data)
         instances_list = []
         for dictionary in dictionaries:
             instance = cls.create(**dictionary)
