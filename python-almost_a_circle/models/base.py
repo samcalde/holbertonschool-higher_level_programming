@@ -35,7 +35,7 @@ class Base:
             for instance in list_objs:
                 objs_list.append(instance.to_dictionary())
             with open(f'{cls.__name__}.json', 'w') as file:
-                json.dump(objs_list, file)
+                file.write(cls.to_json_string(objs_list))
         else:
             with open(f'{cls.__name__}.json', 'w') as file:
                 json.dump([], file)
@@ -47,7 +47,7 @@ class Base:
         """
         if list_dictionaries:
             return json.dumps(list_dictionaries)
-        return ("[]")
+        return "[]"
 
     @staticmethod
     def from_json_string(json_string):
