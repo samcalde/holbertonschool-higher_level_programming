@@ -64,8 +64,8 @@ class Base:
         """
         Returns an instance with all attributes already set:
         """
-        from models.rectangle import Rectangle
-        from models.square import Square
+        from rectangle import Rectangle
+        from square import Square
         if cls == Square:
             instance = cls(1)
         else:
@@ -78,8 +78,8 @@ class Base:
         """
         Returns a list of instances based on a file
         """
-        from models.rectangle import Rectangle
-        from models.square import Square
+        from rectangle import Rectangle
+        from square import Square
         try:
             with open(f'{cls.__name__}.json', 'r') as file:
                 data = file.read()
