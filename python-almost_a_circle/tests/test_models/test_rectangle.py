@@ -264,6 +264,15 @@ class TestRectangle(unittest.TestCase):
         self.assertEqual(ret, s)
         os.remove("Rectangle.json")
 
+    def test_rect_savetofile_something(self):
+        ret = '[{"x": 6, "y": 8, "id": 10, "height": 4, "width": 2}]'
+        r1 = Rectangle(2, 4, 6, 8, 10)
+        Rectangle.save_to_file([r1])
+        with open("Rectangle.json", "r") as file:
+            s = (file.read())
+        self.assertEqual(ret, s)
+        os.remove("Rectangle.json")
+
     def test_rect_loadfromfile_nofile(self):
         try:
             os.remove("Rectangle.json")
